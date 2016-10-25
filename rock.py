@@ -13,7 +13,7 @@ computerhand = random.choice(computer)
 i = 0
 computerwin = 0
 playerwin = 0
-
+draw = 0
 
 while True :
 
@@ -24,11 +24,11 @@ while True :
 		if computerhand == "가위":
 			print("컴퓨터 : 가위")
 			print("무승부입니다.")
-			
+			draw ++
 		elif computerhand == "바위" :
 			print("컴퓨터 : 바위")
 			print("컴퓨터가 이겼습니다.")
-			
+			computerwin += 1
 		else :
 			print("컴퓨터 : 보")
 			print("플레이어가 이겼습니다.")
@@ -43,7 +43,7 @@ while True :
 		elif computerhand == "바위":
 			print("컴퓨터 : 바위")
 			print("무승부입니다.")
-			
+			draw ++
 		else :
 			print("컴퓨터 : 보")
 			print("컴퓨터가 이겼습니다.")
@@ -63,7 +63,7 @@ while True :
 		else :
 			print("컴퓨터 : 보")
 			print("무승부입니다.")
-			
+			draw ++
 	elif hand == "x" :
 		break
-print("컴퓨터 : " ,computerwin ," 플레이어 : " ,playerwin)
+print("컴퓨터 : " ,computerwin ," 플레이어 : " ,playerwin, " 무승부: ", draw )
