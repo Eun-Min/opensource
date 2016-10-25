@@ -16,8 +16,9 @@ playerwin = 0
 draw = 0
 
 while True :
-
+	print("=========================================")
 	hand = input("가위바위보 중에 하나를 고르세요 (종료:x)  ")
+	print("=========================================")
 	computerhand = random.choice(computer)
 
 	if hand == "가위" :
